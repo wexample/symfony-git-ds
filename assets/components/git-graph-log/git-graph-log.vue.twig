@@ -1,0 +1,34 @@
+{%- extends '@WexampleSymfonyDesignSystemBundle/components/_abstract/vue/vue.vue.twig' -%}
+
+{%- block vue_config -%}
+    {{ parent() }}
+    {{ trans_js(render_pass, 'WexampleSymfonyDesignSystemBundle.common.system::frontend.*') }}
+    {{ trans_js(render_pass, 'WexampleSymfonyGitDsBundle.components.git-graph-log.git-graph-log::*') }}
+{%- endblock -%}
+
+{%- block vue_require -%}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/graph-log') -}}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/load-more') -}}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/spinner') -}}
+{%- endblock -%}
+
+{%- block vue_body -%}
+    <div class="git-graph-log">
+        <div v-if="isLoading && !items.length" class="empty">
+            <spinner size="sm" :label="resolvedLoadingLabel"></spinner>
+        </div>
+        <div v-else-if="!items.length" class="empty">[[ resolvedEmptyLabel ]]</div>
+        <graph-log v-else :items="items"></graph-log>
+
+        {#- Read as it is scrolled: the next page comes when this line nears
+            the screen, or on its button. -#}
+        <div v-if="hasNewerEntities" ref="more" class="git-graph-log--more">
+            <load-more
+                    :label="resolvedLoadMoreLabel"
+                    icon="ph:bold/caret-down"
+                    :is-loading="isLoadingNewer"
+                    @load="loadNewerEntities"
+            ></load-more>
+        </div>
+    </div>
+{%- endblock -%}

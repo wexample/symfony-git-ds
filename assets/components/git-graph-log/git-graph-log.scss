@@ -1,0 +1,9 @@
+@use '@wexample/symfony-design-system/css/shapes/empty';
+@use '@wexample/symfony-design-system/components/graph-log/graph-log';
+@use '@wexample/symfony-design-system/components/spinner/spinner';
+
+.git-graph-log--more {
+  display: flex;
+  justify-content: center;
+  padding-block: var(--space-3);
+}

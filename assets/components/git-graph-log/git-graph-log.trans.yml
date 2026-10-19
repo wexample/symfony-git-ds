@@ -3,3 +3,6 @@ en:
 
 fr:
   load_more: Commits plus anciens
+
+zh:
+  load_more: 更多旧的提交

@@ -1,0 +1,8 @@
+{
+    "components/git-graph-log/git-graph-log.zh.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    }
+}

@@ -1,4 +1,124 @@
 {
+    "components/git-graph-log/git-graph-log.ar.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.bn.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.de.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.es.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.fa.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.fi.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.he.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.hi.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.id.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.it.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.ja.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.ko.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.nl.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.pl.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.pt_BR.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.ru.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.th.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.tr.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.ur.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-graph-log/git-graph-log.vi.yml": {
+        "load_more": {
+            "hash": "3f82526cd69838e03ee16c6373944645",
+            "engine": "syrtis"
+        }
+    },
     "components/git-graph-log/git-graph-log.zh.yml": {
         "load_more": {
             "hash": "3f82526cd69838e03ee16c6373944645",

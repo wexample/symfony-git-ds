@@ -6,3 +6,63 @@ fr:
 
 zh:
   load_more: 更多旧的提交
+
+ar:
+  load_more: 'التعديلات الأقدم'
+
+hi:
+  load_more: 'पुराने कमिट्स'
+
+he:
+  load_more: 'התחייבויות ישנות'
+
+fa:
+  load_more: 'کمیت های قدیمی تر'
+
+ur:
+  load_more: 'پرانے کمٹس'
+
+ja:
+  load_more: 古いコミット
+
+ko:
+  load_more: '이전 커밋'
+
+bn:
+  load_more: 'পুরানো কমিটগুলো'
+
+th:
+  load_more: คอมมิตเก่า
+
+de:
+  load_more: 'Ältere Commits'
+
+fi:
+  load_more: 'Vanhemmat sitoumukset'
+
+ru:
+  load_more: 'Старые коммиты'
+
+pl:
+  load_more: 'Starsze commity'
+
+es:
+  load_more: 'Commits anteriores'
+
+it:
+  load_more: 'Commits precedenti'
+
+pt_BR:
+  load_more: 'Commits antigos'
+
+tr:
+  load_more: 'Daha eski taahhütler'
+
+vi:
+  load_more: 'Các cam kết cũ'
+
+id:
+  load_more: 'Komit yang lebih lama'
+
+nl:
+  load_more: 'Oudere commits'

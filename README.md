@@ -1,6 +1,6 @@
 # symfony-git-ds
 
-Version: 2.0.2
+Version: 2.0.3
 
 A git repository's history drawn as a graph, read page after page as it is scrolled
 
@@ -24,10 +24,10 @@ The suite includes packages for configuration management, file handling, prompts
 ## Dependencies
 
 - php: >=8.5
-- wexample/symfony-design-system: >=38.0.0
+- wexample/symfony-design-system: >=39.0.0
 - wexample/symfony-git: >=2.0.0
-- wexample/symfony-helpers: >=17.0.0
-- wexample/symfony-loader: >=23.3.0
+- wexample/symfony-helpers: >=18.0.0
+- wexample/symfony-loader: >=24.0.0
 
 ## Versioning & Compatibility Policy
 

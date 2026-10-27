@@ -16,7 +16,7 @@ use Wexample\SymfonyLoader\Twig\ComponentsExtension;
  *   knows (GitActivityService), for a page to print — `.repositories`,
  *   `.commits`.
  * - `git_activity_calendar({ class })`: its days as a contribution calendar,
- *   drawn on the server.
+ *   drawn on the server, standing up where its place is too narrow.
  */
 class GitActivityExtension extends AbstractTemplateExtension
 {
@@ -36,6 +36,7 @@ class GitActivityExtension extends AbstractTemplateExtension
                 'git_activity_calendar',
                 function (Environment $twig, $context, array $options = []): string {
                     $activity = $this->gitActivity();
+                    $locale = $this->requestStack->getCurrentRequest()?->getLocale() ?? 'en';
 
                     return $this->renderComponent(
                         $twig,
@@ -45,10 +46,10 @@ class GitActivityExtension extends AbstractTemplateExtension
                             'class' => $options['class'] ?? null,
                             'commits' => $activity->getCommits(),
                             'cell_size' => GitActivityCalendarHelper::CELL,
-                            'layout' => GitActivityCalendarHelper::layout(
-                                $activity->days,
-                                $this->requestStack->getCurrentRequest()?->getLocale() ?? 'en'
-                            ),
+                            'layouts' => [
+                                'lying' => GitActivityCalendarHelper::layout($activity->days, $locale),
+                                'standing' => GitActivityCalendarHelper::layout($activity->days, $locale, true),
+                            ],
                         ]
                     );
                 },

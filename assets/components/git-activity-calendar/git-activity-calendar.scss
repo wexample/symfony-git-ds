@@ -6,6 +6,8 @@
   --git-activity-calendar-middle: color-mix(in srgb, var(--accent-9) 55%, var(--git-activity-calendar-empty));
   --git-activity-calendar-full: var(--accent-9);
 
+  // Its own width decides how it stands, not the screen's.
+  container-type: inline-size;
   margin: 0;
 }
 
@@ -13,6 +15,24 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+// Lying where its squares stay large enough to be told apart, standing below:
+// the weeks then go down, at most as wide as a phone's column.
+.git-activity-calendar--standing {
+  display: none;
+  max-width: 18rem;
+  margin-inline: auto;
+}
+
+@container (max-width: 36rem) {
+  .git-activity-calendar--lying {
+    display: none;
+  }
+
+  .git-activity-calendar--standing {
+    display: block;
+  }
 }
 
 .git-activity-calendar--label {

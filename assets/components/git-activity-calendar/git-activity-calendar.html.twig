@@ -1,27 +1,31 @@
-{#- A year of commits as a contribution calendar: a square a day, a column a
-    week from Monday, its shade one of five levels. Drawn here as svg, so
-    that it runs no script; each day tells its count to the pointer and to
-    the screen reader. -#}
-<figure class="git-activity-calendar{% if class|default(null) %} {{ class }}{% endif %}">
-    <svg class="git-activity-calendar--svg"
+{#- A year of commits as a contribution calendar: a square a day, a week from
+    Monday a column, its shade one of five levels. Drawn twice as svg — lying,
+    and standing for a place too narrow, the weeks then as rows —, the one
+    shown chosen by the width of its place (the stylesheet): no script. Each
+    day tells its count to the pointer and to the screen reader. -#}
+{%- macro calendar(layout, cell_size, orientation, commits) -%}
+    <svg class="git-activity-calendar--svg git-activity-calendar--{{ orientation }}"
          viewBox="0 0 {{ layout.width }} {{ layout.height }}"
          role="img"
          aria-label="{{ '@component::label' | trans({ '%count%': commits }) }}">
-        {%- for month in layout.months -%}
-            <text class="git-activity-calendar--label" x="{{ month.x }}" y="11">{{ month.label }}</text>
-        {%- endfor -%}
-        {%- for weekday in layout.weekdays -%}
-            <text class="git-activity-calendar--label" x="0" y="{{ weekday.y }}">{{ weekday.label }}</text>
+        {%- for label in layout.labels -%}
+            <text class="git-activity-calendar--label" x="{{ label.x }}" y="{{ label.y }}" text-anchor="{{ label.anchor }}">{{ label.label }}</text>
         {%- endfor -%}
         {%- for cell in layout.cells -%}
             <rect class="git-activity-calendar--cell git-activity-calendar--level-{{ cell.level }}" x="{{ cell.x }}" y="{{ cell.y }}" width="{{ cell_size }}" height="{{ cell_size }}" rx="2">
                 <title>{{ '@component::day' | trans({ '%count%': cell.commits, '%date%': cell.date }) }}</title>
             </rect>
         {%- endfor -%}
-        <text class="git-activity-calendar--label" x="{{ layout.legend_less_x }}" y="{{ layout.legend_y + cell_size - 1 }}" text-anchor="end">{{ '@component::less' | trans }}</text>
-        {%- for step in layout.legend -%}
-            <rect class="git-activity-calendar--cell git-activity-calendar--level-{{ step.level }}" x="{{ step.x }}" y="{{ layout.legend_y }}" width="{{ cell_size }}" height="{{ cell_size }}" rx="2"></rect>
+        {%- for word in layout.words -%}
+            <text class="git-activity-calendar--label" x="{{ word.x }}" y="{{ word.y }}" text-anchor="{{ word.anchor }}">{{ ('@component::' ~ word.word) | trans }}</text>
         {%- endfor -%}
-        <text class="git-activity-calendar--label" x="{{ layout.legend_more_x }}" y="{{ layout.legend_y + cell_size - 1 }}">{{ '@component::more' | trans }}</text>
+        {%- for step in layout.legend -%}
+            <rect class="git-activity-calendar--cell git-activity-calendar--level-{{ step.level }}" x="{{ step.x }}" y="{{ step.y }}" width="{{ cell_size }}" height="{{ cell_size }}" rx="2"></rect>
+        {%- endfor -%}
     </svg>
+{%- endmacro -%}
+{%- import _self as calendar -%}
+<figure class="git-activity-calendar{% if class|default(null) %} {{ class }}{% endif %}">
+    {{ calendar.calendar(layouts.lying, cell_size, 'lying', commits) }}
+    {{ calendar.calendar(layouts.standing, cell_size, 'standing', commits) }}
 </figure>

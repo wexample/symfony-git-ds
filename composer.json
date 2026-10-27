@@ -1,7 +1,7 @@
 {
   "name": "wexample/symfony-git-ds",
   "description": "A git repository's history drawn as a graph, read page after page as it is scrolled",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "type": "library",
   "license": "MIT",
   "autoload": {
@@ -18,7 +18,7 @@
   "require": {
     "php": ">=8.5",
     "wexample/symfony-design-system": ">=39.0.3",
-    "wexample/symfony-git": ">=3.0.0",
+    "wexample/symfony-git": ">=5.0.0",
     "wexample/symfony-helpers": ">=18.0.2",
     "wexample/symfony-loader": ">=25.3.0"
   },

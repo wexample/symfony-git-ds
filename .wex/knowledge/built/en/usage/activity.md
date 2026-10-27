@@ -1,9 +1,17 @@
 ## The work in figures
 
-`git_activity()` returns the `GitActivity` of the last year (symfony-git): `.repositories`, `.commits`, for a page to print. Its days are drawn by the calendar of symfony-charts-ds, read from the api:
+`git_activity()` returns the `GitActivity` of the last year (symfony-git): `.repositories`, `.commits`, for a page to print.
+
+## The work day by day
+
+`git_activity_calendar({ class })` draws those days as a contribution calendar: a square a day, a column a week from Monday, the months named above in the page's language, Monday, Wednesday and Friday on the left, a legend from « less » to « more ». A day without commits keeps the ground's line colour; the others take one of four shades of the accent, a quarter of the days with commits in each. Each day tells its count and its date to the pointer.
+
+It is an svg drawn on the server (`GitActivityCalendarHelper`): no script, the squares growing with the width it is given. Drawn twice, lying and standing: where its own place is narrower than 36rem — a phone, a narrow column —, it stands up, the weeks as rows going down, the months on the side and the days' initials above. A container query decides, on the width of its place and not of the screen.
+
+Its colours are three custom properties a page may set: `--git-activity-calendar-empty` (a day without commits; the ground's line by default), `--git-activity-calendar-middle` and `--git-activity-calendar-full` (from the fewest commits to the most; the accent by default).
 
 ```twig
 {%- set activity = git_activity() -%}
 {{ activity.repositories }} · {{ activity.commits }}
-{{ chart('calendar', {}, { source: 'git-activity', height: '9rem' }) }}
+{{ git_activity_calendar() }}
 ```

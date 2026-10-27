@@ -1,7 +1,7 @@
 {
   "name": "wexample/symfony-git-ds",
   "description": "A git repository's history drawn as a graph, read page after page as it is scrolled",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "type": "library",
   "license": "MIT",
   "autoload": {

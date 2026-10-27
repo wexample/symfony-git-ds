@@ -1,0 +1,36 @@
+// The width it is given, the squares growing with it; the ground's line
+// colour for a day without commits, the accent ever stronger for the others.
+.git-activity-calendar {
+  margin: 0;
+}
+
+.git-activity-calendar--svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.git-activity-calendar--label {
+  fill: var(--text-color-muted);
+  font-size: 9px;
+}
+
+.git-activity-calendar--level-0 {
+  fill: var(--border-color-discreet);
+}
+
+.git-activity-calendar--level-1 {
+  fill: color-mix(in srgb, var(--accent-9) 30%, var(--border-color-discreet));
+}
+
+.git-activity-calendar--level-2 {
+  fill: color-mix(in srgb, var(--accent-9) 55%, var(--border-color-discreet));
+}
+
+.git-activity-calendar--level-3 {
+  fill: color-mix(in srgb, var(--accent-9) 80%, var(--border-color-discreet));
+}
+
+.git-activity-calendar--level-4 {
+  fill: var(--accent-9);
+}

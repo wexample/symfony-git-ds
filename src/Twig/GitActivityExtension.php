@@ -2,28 +2,58 @@
 
 namespace Wexample\SymfonyGitDs\Twig;
 
-use Twig\Extension\AbstractExtension;
+use Symfony\Component\HttpFoundation\RequestStack;
+use Twig\Environment;
 use Twig\TwigFunction;
+use Wexample\SymfonyDesignSystem\Twig\AbstractTemplateExtension;
 use Wexample\SymfonyGit\Class\GitActivity;
 use Wexample\SymfonyGit\Service\GitActivityService;
+use Wexample\SymfonyGitDs\Helper\GitActivityCalendarHelper;
+use Wexample\SymfonyLoader\Twig\ComponentsExtension;
 
 /**
- * `git_activity()`: the work of the last year in the repositories the site
- * knows (GitActivityService), for a page to print — `.repositories`,
- * `.commits`. Its days are drawn by `chart('calendar', {}, { source:
- * 'git-activity' })`, read from the api.
+ * - `git_activity()`: the work of the last year in the repositories the site
+ *   knows (GitActivityService), for a page to print — `.repositories`,
+ *   `.commits`.
+ * - `git_activity_calendar({ class })`: its days as a contribution calendar,
+ *   drawn on the server.
  */
-class GitActivityExtension extends AbstractExtension
+class GitActivityExtension extends AbstractTemplateExtension
 {
     public function __construct(
+        ComponentsExtension $componentsExtension,
         private readonly GitActivityService $activity,
+        private readonly RequestStack $requestStack,
     ) {
+        parent::__construct($componentsExtension);
     }
 
     public function getFunctions(): array
     {
         return [
             new TwigFunction('git_activity', $this->gitActivity(...)),
+            new TwigFunction(
+                'git_activity_calendar',
+                function (Environment $twig, $context, array $options = []): string {
+                    $activity = $this->gitActivity();
+
+                    return $this->renderComponent(
+                        $twig,
+                        $context,
+                        '@WexampleSymfonyGitDsBundle/components/git-activity-calendar',
+                        [
+                            'class' => $options['class'] ?? null,
+                            'commits' => $activity->getCommits(),
+                            'cell_size' => GitActivityCalendarHelper::CELL,
+                            'layout' => GitActivityCalendarHelper::layout(
+                                $activity->days,
+                                $this->requestStack->getCurrentRequest()?->getLocale() ?? 'en'
+                            ),
+                        ]
+                    );
+                },
+                self::TEMPLATE_FUNCTION_OPTIONS
+            ),
         ];
     }
 

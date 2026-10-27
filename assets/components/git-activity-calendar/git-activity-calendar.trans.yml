@@ -1,0 +1,11 @@
+en:
+  label: '{0} No commits over the last year|{1} One commit over the last year|]1,Inf[ %count% commits over the last year'
+  day: '{0} No commits on %date%|{1} One commit on %date%|]1,Inf[ %count% commits on %date%'
+  less: Less
+  more: More
+
+fr:
+  label: '{0} Aucun commit sur un an|{1} Un commit sur un an|]1,Inf[ %count% commits sur un an'
+  day: '{0} Aucun commit le %date%|{1} Un commit le %date%|]1,Inf[ %count% commits le %date%'
+  less: Moins
+  more: Plus

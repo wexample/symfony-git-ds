@@ -1,6 +1,11 @@
-// The width it is given, the squares growing with it; the ground's line
-// colour for a day without commits, the accent ever stronger for the others.
+// The width it is given, the squares growing with it. A day without commits
+// takes the empty colour, the others go from the middle one to the full one
+// as they grow: the ground's line and the accent unless a page sets them.
 .git-activity-calendar {
+  --git-activity-calendar-empty: var(--border-color-discreet);
+  --git-activity-calendar-middle: color-mix(in srgb, var(--accent-9) 55%, var(--git-activity-calendar-empty));
+  --git-activity-calendar-full: var(--accent-9);
+
   margin: 0;
 }
 
@@ -16,21 +21,21 @@
 }
 
 .git-activity-calendar--level-0 {
-  fill: var(--border-color-discreet);
+  fill: var(--git-activity-calendar-empty);
 }
 
 .git-activity-calendar--level-1 {
-  fill: color-mix(in srgb, var(--accent-9) 30%, var(--border-color-discreet));
+  fill: color-mix(in srgb, var(--git-activity-calendar-middle) 55%, var(--git-activity-calendar-empty));
 }
 
 .git-activity-calendar--level-2 {
-  fill: color-mix(in srgb, var(--accent-9) 55%, var(--border-color-discreet));
+  fill: var(--git-activity-calendar-middle);
 }
 
 .git-activity-calendar--level-3 {
-  fill: color-mix(in srgb, var(--accent-9) 80%, var(--border-color-discreet));
+  fill: color-mix(in srgb, var(--git-activity-calendar-full) 50%, var(--git-activity-calendar-middle));
 }
 
 .git-activity-calendar--level-4 {
-  fill: var(--accent-9);
+  fill: var(--git-activity-calendar-full);
 }

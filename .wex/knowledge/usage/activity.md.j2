@@ -8,6 +8,8 @@
 
 It is an svg drawn on the server (`GitActivityCalendarHelper`): no script, the squares growing with the width it is given.
 
+Its colours are three custom properties a page may set: `--git-activity-calendar-empty` (a day without commits; the ground's line by default), `--git-activity-calendar-middle` and `--git-activity-calendar-full` (from the fewest commits to the most; the accent by default).
+
 {% raw %}```twig
 {%- set activity = git_activity() -%}
 {{ activity.repositories }} · {{ activity.commits }}

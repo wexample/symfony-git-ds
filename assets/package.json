@@ -2,8 +2,6 @@
   "name": "@wexample/symfony-git-ds",
   "version": "1.0.1",
   "peerDependencies": {
-    "@wexample/js-graph-log": "*",
-    "@wexample/symfony-design-system": "*",
-    "@wexample/symfony-git": "*"
+    "@wexample/js-graph-log": "*"
   }
 }

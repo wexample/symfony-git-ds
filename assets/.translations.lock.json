@@ -1,4 +1,382 @@
 {
+    "components/git-activity-calendar/git-activity-calendar.ar.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.bn.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.de.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.es.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.fa.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.fi.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.he.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.hi.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.id.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.it.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.ja.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.ko.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.nl.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.pl.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.pt_BR.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.ru.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.th.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.tr.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.ur.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.vi.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
+    "components/git-activity-calendar/git-activity-calendar.zh.yml": {
+        "day": {
+            "hash": "4cfb005116189cbdbfed1a5a18efe1ef",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "130cd6094f34c7865d71dd37391681f0",
+            "engine": "syrtis"
+        },
+        "less": {
+            "hash": "1ccf80cfabc49b4ccce309bc9d55c8f9",
+            "engine": "syrtis"
+        },
+        "more": {
+            "hash": "a37bd18f0cd7c65de800c17f30321471",
+            "engine": "syrtis"
+        }
+    },
     "components/git-graph-log/git-graph-log.ar.yml": {
         "load_more": {
             "hash": "3f82526cd69838e03ee16c6373944645",

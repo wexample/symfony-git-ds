@@ -9,3 +9,129 @@ fr:
   day: '{0} Aucun commit le %date%|{1} Un commit le %date%|]1,Inf[ %count% commits le %date%'
   less: Moins
   more: Plus
+
+zh:
+  label: '过去一年没有提交|过去一年有{1}次提交|过去一年有%count%次提交'
+  day: 在%date%没有提交|在%date%有一次提交|在%date%有%count%次提交
+  less: 更少
+  more: 更多
+
+ar:
+  label: '{0} لا توجد عمليات دفع في العام الماضي|{1} عملية دفع واحدة في العام الماضي|]1,Inf[ %count% عمليات دفع في العام الماضي'
+  day: '{0} لا توجد عمليات دفع في %date%|{1} عملية دفع واحدة في %date%|]1,Inf[ %count% عمليات دفع في %date%'
+  less: أقل
+  more: أكثر
+
+hi:
+  label: '{0} पिछले वर्ष में कोई कमिट नहीं|{1} पिछले वर्ष में एक कमिट|]1,Inf[ %count% पिछले वर्ष में कमिट्स'
+  day: '{0} %date% पर कोई कमिट नहीं|{1} %date% पर एक कमिट|]1,Inf[ %count% कमिट्स %date% पर'
+  less: कम
+  more: ज़्यादा
+
+he:
+  label: '{0} אין התחייבויות בשנה האחרונה|{1} התחייבות אחת בשנה האחרונה|]1,Inf[ %count% התחייבויות בשנה האחרונה'
+  day: '{0} אין התחייבויות על %date%|{1} התחייבות אחת על %date%|]1,Inf[ %count% התחייבויות על %date%'
+  less: פחות
+  more: יותר
+
+fa:
+  label: '{0} هیچ کومی در سال گذشته وجود ندارد|{1} یک کمی در سال گذشته وجود دارد|]1,Inf[ %count% کومی در سال گذشته وجود دارد'
+  day: '{0} هیچ کومی در %date% وجود ندارد|{1} یک کمی در %date% وجود دارد|]1,Inf[ %count% کومی در %date% وجود دارد'
+  less: کمتر
+  more: بیشتر
+
+ur:
+  label: '{0} پچھلے سال میں کوئی کمیٹ نہیں|{1} پچھلے سال میں ایک کمیٹ|]1,Inf[ %count% کمیٹس پچھلے سال میں'
+  day: '{0} %date% پر کوئی کمیٹ نہیں|{1} ایک کمیٹ %date% پر|]1,Inf[ %count% کمیٹس %date% پر'
+  less: کم
+  more: زیادہ
+
+ja:
+  label: '{0} 過去1年間のコミットはありません|{1} 過去1年間に1件のコミットがあります|]1,Inf[ %count% 過去1年間のコミットがあります'
+  day: '{0} %date% のコミットはありません|{1} %date% に1件のコミットがあります|]1,Inf[ %count% %date% にコミットがあります'
+  less: 少ない
+  more: 多い
+
+ko:
+  label: '지난 1년 동안 커밋이 없습니다|지난 1년 동안 커밋이 1개 있습니다|지난 1년 동안 %count%개의 커밋이 있습니다'
+  day: '{0} %date%에 커밋이 없습니다|{1} %date%에 커밋이 1개 있습니다|%count% %date%에 커밋이 {1}개 있습니다'
+  less: '더 적게'
+  more: '더 많이'
+
+bn:
+  label: '{0} গত এক বছরে কোন কমিট নেই|{1} গত এক বছরে একটি কমিট আছে|]1,Inf[ %count% গত এক বছরে কমিট আছে'
+  day: '{0} %date% তে কোন কমিট নেই|{1} %date% তে একটি কমিট আছে|]1,Inf[ %count% %date% তে কমিট আছে'
+  less: কম্পন
+  more: বেশি
+
+th:
+  label: '{0} ไม่มีการคอมมิทในปีที่ผ่านมา|{1} มีการคอมมิทหนึ่งครั้งในปีที่ผ่านมา|]1,Inf[ %count% การคอมมิทในปีที่ผ่านมา'
+  day: '{0} ไม่มีการคอมมิทในวันที่ %date%|{1} มีการคอมมิทหนึ่งครั้งในวันที่ %date%|]1,Inf[ %count% การคอมมิทในวันที่ %date%'
+  less: น้อยลง
+  more: มากขึ้น
+
+de:
+  label: '{0} Keine Commits im letzten Jahr|{1} Ein Commit im letzten Jahr|]1,Inf[ %count% Commits im letzten Jahr'
+  day: '{0} Keine Commits am %date%|{1} Ein Commit am %date%|]1,Inf[ %count% Commits am %date%'
+  less: Weniger
+  more: Mehr
+
+fi:
+  label: '{0} Ei sitoumuksia viimeisen vuoden aikana|{1} Yksi sitoumus viimeisen vuoden aikana|]1,Inf[ %count% sitoumusta viimeisen vuoden aikana'
+  day: '{0} Ei sitoumuksia %date%|{1} Yksi sitoumus %date%|]1,Inf[ %count% sitoumusta %date%'
+  less: Vähemmän
+  more: Enemmän
+
+ru:
+  label: '{0} Нет коммитов за последний год|{1} Один коммит за последний год|]1,Inf[ %count% коммитов за последний год'
+  day: '{0} Нет коммитов за %date%|{1} Один коммит за %date%|]1,Inf[ %count% коммитов за %date%'
+  less: Меньше
+  more: Больше
+
+pl:
+  label: '{0} Brak commitów w ciągu ostatniego roku|{1} Jeden commit w ciągu ostatniego roku|]1,Inf[ %count% commitów w ciągu ostatniego roku'
+  day: '{0} Brak commitów w %date%|{1} Jeden commit w %date%|]1,Inf[ %count% commitów w %date%'
+  less: Mniej
+  more: Więcej
+
+es:
+  label: '{0} Sin commits en el último año|{1} Un commit en el último año|]1,Inf[ %count% commits en el último año'
+  day: '{0} Sin commits en %date%|{1} Un commit en %date%|]1,Inf[ %count% commits en %date%'
+  less: Menos
+  more: Más
+
+it:
+  label: "{0} Nessun commit nell'ultimo anno|{1} Un commit nell'ultimo anno|]1,Inf[ %count% commits nell'ultimo anno"
+  day: '{0} Nessun commit il %date%|{1} Un commit il %date%|]1,Inf[ %count% commits il %date%'
+  less: Meno
+  more: 'Di più'
+
+pt_BR:
+  label: '{0} Nenhum commit no último ano|{1} Um commit no último ano|]1,Inf[ %count% commits no último ano'
+  day: '{0} Nenhum commit em %date%|{1} Um commit em %date%|]1,Inf[ %count% commits em %date%'
+  less: Menos
+  more: Mais
+
+tr:
+  label: '{0} Son bir yılda hiç commit yok|{1} Son bir yılda bir commit var|]1,Inf[ %count% son bir yılda commit var'
+  day: '{0} %date% tarihinde hiç commit yok|{1} %date% tarihinde bir commit var|]1,Inf[ %count% %date% tarihinde commit var'
+  less: 'Daha az'
+  more: 'Daha fazla'
+
+vi:
+  label: '{0} Không có cam kết nào trong năm qua|{1} Một cam kết trong năm qua|]1,Inf[ %count% cam kết trong năm qua'
+  day: '{0} Không có cam kết nào vào %date%|{1} Một cam kết vào %date%|]1,Inf[ %count% cam kết vào %date%'
+  less: 'Ít hơn'
+  more: 'Nhiều hơn'
+
+id:
+  label: '{0} Tidak ada commit selama setahun terakhir|{1} Satu commit selama setahun terakhir|]1,Inf[ %count% commit selama setahun terakhir'
+  day: '{0} Tidak ada commit pada %date%|{1} Satu commit pada %date%|]1,Inf[ %count% commit pada %date%'
+  less: 'Lebih sedikit'
+  more: 'Lebih banyak'
+
+nl:
+  label: '{0} Geen commits in het afgelopen jaar|{1} Eén commit in het afgelopen jaar|]1,Inf[ %count% commits in het afgelopen jaar'
+  day: '{0} Geen commits op %date%|{1} Eén commit op %date%|]1,Inf[ %count% commits op %date%'
+  less: Minder
+  more: Meer

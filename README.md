@@ -1,6 +1,6 @@
 # symfony-git-ds
 
-Version: 3.0.23
+Version: 3.0.24
 
 A git repository's history drawn as a graph, read page after page as it is scrolled
 
